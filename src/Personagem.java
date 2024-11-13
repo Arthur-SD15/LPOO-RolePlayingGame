@@ -1,3 +1,6 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public abstract class Personagem{
     private String nomeTipo;
     private double saude;
@@ -53,14 +56,33 @@ public abstract class Personagem{
         this.arma = arma;
     }
 
+    // testar, morto e vivo
     public void printStatus(){
+        if(estaMorto()){
+            System.out.printf(getNomeTipo() + " [Saúde: %.1f, Força: %.1f, Destreza: %.1f, %s]\n", getSaude(), getForca(), getDestreza(), getArma());
+        } else {
+            System.out.printf(getNomeTipo() + " [Morreu, Força: %.1f, Destreza: %.1f, %s]\n", getForca(), getDestreza(), getArma());
+        }
     }
 
     public void atacar(Personagem b){
+        if(estaMorto()){
+            System.out.println("O " + getNomeTipo() + " não consegue atacar, pois está morto e não pode atacar.");
+            return;
+        } else {
+            System.out.println("O " + getNomeTipo() + " ataca o " + b.getNomeTipo() + " com " + getArma().getNome() + ".");
+        }
+
+        if(b.estaMorto()){
+            System.err.println("Pare! O " + b.getNomeTipo() + " já está morto!");
+            return;
+        }
     }
 
+    // testar, dano
     private double calculaDano(){
-        return 0;
+        BigDecimal dano = new BigDecimal(getForca() * getArma().getModDano());
+        return dano.setScale(1, RoundingMode.HALF_UP).doubleValue();
     }
 
     public double receberDano(double pontosDano){
