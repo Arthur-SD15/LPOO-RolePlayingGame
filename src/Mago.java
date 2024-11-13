@@ -1,5 +1,5 @@
 public class Mago extends Personagem{
-    public Mago(String nomeTipo, double saude, double forca, double destreza, ArmaMago arma){
+    public Mago(double saude, double forca, double destreza, ArmaMago arma){
         super("Mago", saude, forca, destreza, arma);
     }
 }
