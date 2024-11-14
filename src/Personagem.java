@@ -58,9 +58,9 @@ public abstract class Personagem{
 
     public void printStatus(){
         if(estaMorto()){
-            System.out.printf(getNomeTipo() + " [Morreu, Força: %.1f, Destreza: %.1f, %s]\n", getForca(), getDestreza(), getArma().getNome());
+            System.out.printf(getNomeTipo() + " [Morto, Força: %.1f, Destreza: %.1f, %s]\n", getForca(), getDestreza(), getArma().getNome());
         } else {
-            System.out.printf(getNomeTipo() + " [Saúde: %.1f, Força: %.1f, Destreza: %.1f, %s]\n", getSaude(), getForca(), getDestreza(), getArma().getNome());
+            System.out.printf(getNomeTipo() + " [Saude: %.1f, Força: %.1f, Destreza: %.1f, %s]\n", getSaude(), getForca(), getDestreza(), getArma().getNome());
         }
     }
 
@@ -73,7 +73,7 @@ public abstract class Personagem{
         }
 
         if(b.estaMorto()){
-            System.err.println("Pare! O " + b.getNomeTipo() + " já está morto!");
+            System.out.println("Pare! O " + b.getNomeTipo() + " já está morto!");
             return;
         }
 
@@ -82,13 +82,13 @@ public abstract class Personagem{
             System.out.printf("O ataque foi efetivo com %.1f pontos de dano!\n", auxDanoSofrido);
             b.receberDano(auxDanoSofrido);
         } else if (getDestreza() < b.getDestreza()){
-            double auxDanoSofrido = calculaDano();
+            double auxDanoSofrido = b.calculaDano();
             System.out.printf("O ataque foi inefetivo e revidado com %.1f pontos de dano!\n", auxDanoSofrido);
             receberDano(auxDanoSofrido);
         } else {
             System.out.println("O ataque foi defendido, ninguem se machucou!");
         }
-    }
+    }    
 
     private double calculaDano(){
         BigDecimal dano = new BigDecimal(getForca() * getArma().getModDano());

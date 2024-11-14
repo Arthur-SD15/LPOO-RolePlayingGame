@@ -71,18 +71,16 @@ public class Main {
 
         while (true) {
             int ataque = sc.nextInt();
+            int defesa = sc.nextInt();
 
             if (ataque == 0) {
                 break;
             }
 
-            int defesa = sc.nextInt();
-            
             personagens[ataque - 1].atacar(personagens[defesa - 1]);
-            personagens[0].printStatus();
-            personagens[1].printStatus();
+            personagens[ataque - 1].printStatus();
+            personagens[defesa - 1].printStatus();
         }
-
         sc.close();
     }
 }
