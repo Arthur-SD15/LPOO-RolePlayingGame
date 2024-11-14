@@ -26,8 +26,6 @@ O projeto segue rigorosamente os princípios de Orientação a Objetos, contendo
 
 O Role Playing Game (RPG) possui três personagens: Mago, Paladino e Clérigo, que são identificados pelos números (1, 2 e 3) e podem ser selecionados via linha de comando. Os personagens possuem atributos de saúde, força e destreza, com pontos variando de 0.0 a 10.0.
 
-Caso seja inserido um valor superior a 10.0, o valor máximo será 10.0; da mesma forma, caso o valor inserido seja inferior a 0.0, o valor mínimo será 0.0, impedindo valores inválidos.
-
 Além dos atributos citados, cada personagem possui uma arma com um modificador de dano. Cada personagem tem à disposição duas armas, mas deve escolher apenas uma. Após selecionar o personagem, a arma é escolhida via comando 1 ou 2.
 
 - Mago
