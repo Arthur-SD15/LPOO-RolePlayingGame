@@ -65,6 +65,53 @@ Transcrevendo, o fluxograma:
 		  - Se o personagem B estiver morto, o personagem B já está morto.
   - Se o personagem A estiver morto, o personagem A não consegue atacar.
 
+Indo para as entradas e saídas, durante a batalha temos, por exemplo:
+- Para, Mago com 10 pontos de saúde, 10 pontos de força, 5 pontos de destreza com Magia da Transmutação;
+- Para, Mago com 10 pontos de saúde, 10 pontos de força, 6 pontos de destreza com Psi-kappa;
+
+Entrada:
+```
+1 10 10 5 1 
+1 10 10 6 2 
+```
+
+Impresso:
+```
+Mago [Saude: 10.0, Forca: 10.0, Destreza: 5.0, Magia da Transmutação]
+Mago [Saude: 10.0, Forca: 10.0, Destreza: 6.0, Psi-kappa]
+```
+
+Entrada (atacante, defensor):
+```
+1 2 
+```
+
+Impresso:
+```
+O Mago ataca o Mago com Magia da Transmutação.
+O ataque foi inefetivo e revidado com 5.0 pontos de dano!
+Mago [Saude: 5.0, Forca: 10.0, Destreza: 5.0, Magia da Transmutação]
+Mago [Saude: 10.0, Forca: 10.0, Destreza: 6.0, Psi-kappa]
+```
+
+Entrada (atacante, defensor):
+```
+2 1 
+```
+
+Impresso:
+```
+O Mago ataca o Mago com Psi-kappa.
+O ataque foi efetivo com 5.0 pontos de dano!
+Mago [Saude: 10.0, Forca: 10.0, Destreza: 6.0, Psi-kappa]
+Mago [Morto, Forca: 10.0, Destreza: 5.0, Magia da Transmutação]
+```
+
+Fim:
+```
+0
+```
+
 ## :man: Aluno
 
 - Arthur Silva Dantas
