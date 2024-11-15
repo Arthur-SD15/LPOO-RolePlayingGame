@@ -20,7 +20,7 @@ O repositório, de maneira geral, armazena os códigos e as documentações de u
 
 ## :mag_right: Detalhes
 
-O projeto segue rigorosamente os princípios de Orientação a Objetos, contendo 14 arquivos .java com classes abstratas, concretas e heranças. Como apoio, foi utilizado o Diagrama UML, que serviu como base ao longo do desenvolvimento. O código será detalhado com mais profundidade no relatório, pois este breve resumo não tem a intenção de abordar toda a estrutura do código.
+O projeto segue rigorosamente os princípios de Orientação a Objetos, contendo 15 arquivos .java com classes abstratas, concretas e heranças. Como apoio, foi utilizado o Diagrama UML, que serviu como base ao longo do desenvolvimento. O código será detalhado com mais profundidade no relatório, pois este breve resumo não tem a intenção de abordar toda a estrutura do código.
 
 ## :rocket: Funcionalidades
 

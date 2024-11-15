@@ -71,9 +71,9 @@ public abstract class Personagem{
     */
     public void printStatus(){
         if(estaMorto()){
-            System.out.printf(getNomeTipo() + " [Morto, Força: %.1f, Destreza: %.1f, %s]\n", getForca(), getDestreza(), getArma().getNome());
+            System.out.printf(getNomeTipo() + " [Morto, Forca: %.1f, Destreza: %.1f, %s]\n", getForca(), getDestreza(), getArma().getNome());
         } else {
-            System.out.printf(getNomeTipo() + " [Saude: %.1f, Força: %.1f, Destreza: %.1f, %s]\n", getSaude(), getForca(), getDestreza(), getArma().getNome());
+            System.out.printf(getNomeTipo() + " [Saude: %.1f, Forca: %.1f, Destreza: %.1f, %s]\n", getSaude(), getForca(), getDestreza(), getArma().getNome());
         }
     }
 
