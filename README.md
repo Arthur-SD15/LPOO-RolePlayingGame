@@ -7,6 +7,7 @@
   <a href="#mag_right-detalhes">Detalhes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#man-aluno">Aluno</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#book-docs">Docs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#woman_teacher-professora">Professora</a>
 </p>
 
@@ -111,6 +112,11 @@ Fim:
 ```
 0
 ```
+
+
+## :book: Docs
+> [![Baixar PDF](https://img.shields.io/badge/Baixar%20PDF-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](/docs/LPOO_RolePlayingGame.pdf)
+
 
 ## :man: Aluno
 
